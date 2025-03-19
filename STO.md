@@ -10,30 +10,7 @@ Once I had achieved my initial goal, I decided to look for bugs and exploits in 
 
 ## How does it work ?
 
-
-```c++
-HINSTANCE ShellExecuteW(
-  [in, optional] HWND    hwnd,
-  [in, optional] LPCWSTR lpOperation,
-  [in]           LPCWSTR lpFile,
-  [in, optional] LPCWSTR lpParameters,
-  [in, optional] LPCWSTR lpDirectory,
-  [in]           INT     nShowCmd
-);
-end
-```
-
-```cpp
-HINSTANCE ShellExecuteW(
-  [in, optional] HWND    hwnd,
-  [in, optional] LPCWSTR lpOperation,
-  [in]           LPCWSTR lpFile,
-  [in, optional] LPCWSTR lpParameters,
-  [in, optional] LPCWSTR lpDirectory,
-  [in]           INT     nShowCmd
-);
-end
-```
+Game is using WinAPI Function ShellExecuteW to open URLs 
 
 ```c
 HINSTANCE ShellExecuteW(
@@ -46,3 +23,6 @@ HINSTANCE ShellExecuteW(
 );
 end
 ```
+The value of the lpOperation parameter is set to L"open", which allows us, for example, to open the command line when clicking on the "Visit website" button if we set the guild's URL as "cmd.exe" as the guild master. This becomes interesting when we host our own WebDAV server, upload our custom Python/Java code to it, and then set the guild website URL to something like "file://webdavurl/code.py".
+Using URI scheme "file://" is important as it is being used by Windows for WebDAV servers and when ShellExecuteW is called with lpOperation param L"open" and lpFile set as URL of our WebDAV server Windows will open and run code.py automatically, this can lead to remote code execution.
+
