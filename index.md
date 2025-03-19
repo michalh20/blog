@@ -1,2 +1,2 @@
-# Blog Posts 2025
+# 2025
 [Star Trek Online Remote Code Execution](./STO.md).
