@@ -3,3 +3,5 @@ description: Blog where i document my Cybersecurity/programming journey.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-midnight
+markdown: kramdown
+highlighter: rouge
