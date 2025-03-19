@@ -31,4 +31,5 @@ Using URI scheme "file://" is important as it is being used by Windows for WebDA
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7DsEKg5_Ocw?si=7iXN1XVoejrtHdZQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+In next blog post i will talk about weaponizing .rdp files.
 
