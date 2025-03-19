@@ -9,3 +9,25 @@ I found this approach to be quite amateurish and difficult to scale. After about
 Once I had achieved my initial goal, I decided to look for bugs and exploits in the game. I found several, but perhaps the most significant was a 1-click remote code execution exploit on the victim’s computer. All it took was convincing the victim to click a button in the game to visit the guild website. The only condition was that the victim needed to have Python or Java installed. Files like .py or .jar don’t have the "Mark of the Web" assigned to them when downloaded from the internet. (If you bypass the Mark of the Web, you can even run an .exe file, though such an exploit could be sold for a lot of money so nobody will use it for hacking players of a small MMORPG.)
 
 ## How does it work ?
+
+
+```c++
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
+
+```cpp
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
+
+```c
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
