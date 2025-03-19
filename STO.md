@@ -12,7 +12,7 @@ Once I had achieved my initial goal, I decided to look for bugs and exploits in 
 
 Game is using WinAPI Function ShellExecuteW to open URLs 
 
-```c++
+```cpp
 HINSTANCE ShellExecuteW(
   [in, optional] HWND    hwnd,
   [in, optional] LPCWSTR lpOperation,
