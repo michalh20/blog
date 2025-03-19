@@ -12,22 +12,37 @@ Once I had achieved my initial goal, I decided to look for bugs and exploits in 
 
 
 ```c++
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
+HINSTANCE ShellExecuteW(
+  [in, optional] HWND    hwnd,
+  [in, optional] LPCWSTR lpOperation,
+  [in]           LPCWSTR lpFile,
+  [in, optional] LPCWSTR lpParameters,
+  [in, optional] LPCWSTR lpDirectory,
+  [in]           INT     nShowCmd
+);
 end
 ```
 
 ```cpp
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
+HINSTANCE ShellExecuteW(
+  [in, optional] HWND    hwnd,
+  [in, optional] LPCWSTR lpOperation,
+  [in]           LPCWSTR lpFile,
+  [in, optional] LPCWSTR lpParameters,
+  [in, optional] LPCWSTR lpDirectory,
+  [in]           INT     nShowCmd
+);
 end
 ```
 
 ```c
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
+HINSTANCE ShellExecuteW(
+  [in, optional] HWND    hwnd,
+  [in, optional] LPCWSTR lpOperation,
+  [in]           LPCWSTR lpFile,
+  [in, optional] LPCWSTR lpParameters,
+  [in, optional] LPCWSTR lpDirectory,
+  [in]           INT     nShowCmd
+);
 end
 ```
